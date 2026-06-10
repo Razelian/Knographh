@@ -16,7 +16,7 @@ import {
 } from './server/db.ts';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'kno_graph_jwt_super_secret_key';
 
 // Parse json and urlencoded payloads
